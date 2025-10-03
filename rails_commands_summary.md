@@ -68,3 +68,51 @@
 |------|------|
 | `bin/rails about` | Hiển thị thông tin về môi trường Rails hiện tại |
 | `rails --help` | Hiển thị danh sách các lệnh có sẵn |
+
+# Tổng hợp câu lệnh Ruby on Rails
+
+## 🛠 Thông tin chung về ứng dụng
+
+| Lệnh | Mô tả |
+|------|------|
+| `rails -v` | Kiểm tra phiên bản Rails đang dùng |
+| `ruby -v` | Kiểm tra phiên bản Ruby |
+| `rails about` | Hiển thị thông tin tổng quan về app: môi trường, phiên bản Rails, database adapter... |
+| `rails info` | Tương tự như `rails about`, nhưng có thể chi tiết hơn tùy phiên bản Rails |
+| `rails credentials:show` | Hiển thị thông tin mã hóa trong `credentials.yml.enc` |
+| `rails routes` | Hiển thị tất cả các route của ứng dụng |
+| `rails middleware` | Hiển thị danh sách middleware đang được sử dụng |
+| `rails stats` | Thống kê số dòng code trong app (models, controllers, views...) |
+
+---
+
+## 📁 Cấu trúc thư mục và file
+
+| Lệnh | Mô tả |
+|------|------|
+| `tree` | Hiển thị cấu trúc thư mục (cần cài đặt `tree`) |
+| `ls -la` | Liệt kê file và thư mục trong thư mục hiện tại |
+| `cat config/application.rb` | Xem cấu hình chính của ứng dụng |
+| `cat config/environment.rb` | Xem cấu hình môi trường |
+
+---
+
+## 🧪 Kiểm tra môi trường và cấu hình
+
+| Lệnh | Mô tả |
+|------|------|
+| `rails console` | Mở console để tương tác trực tiếp với app |
+| `RAILS_ENV=production rails about` | Kiểm tra thông tin app trong môi trường production |
+| `rails db:environment:set RAILS_ENV=development` | Thiết lập môi trường cho database |
+
+---
+
+## 🔍 Thông tin Gem và phụ thuộc
+
+| Lệnh | Mô tả |
+|------|------|
+| `bundle list` | Liệt kê tất cả gem đang được sử dụng |
+| `bundle show GEM_NAME` | Hiển thị đường dẫn cài đặt của gem |
+| `bundle outdated` | Kiểm tra các gem đã lỗi thời |
+| `bundle info GEM_NAME` | Thông tin chi tiết về gem |
+
