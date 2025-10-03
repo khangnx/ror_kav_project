@@ -1,0 +1,13 @@
+:concurrency: 5
+
+:queues:
+  - default
+  - mailers
+  - critical
+  - low
+
+:timeout: 30
+
+:logfile: ./log/sidekiq.log
+
+:daemon: false
